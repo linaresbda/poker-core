@@ -16,6 +16,7 @@ class Game{
   initGame(numberPlayers, credits) {
     this.shuffleDeck = this.fnShuffleDeck(this.generateDeck());
     this.players = this.generatePlayers(numberPlayers, credits);
+    this.flop = this.generateFlop();
   }
 
   generateDeck() {
@@ -85,7 +86,8 @@ class Game{
   generateFlop(){
     let flop = [];
     for (let i = 0; i < 3; i++) {
-      flop.push({});
+      flop.push(this.shuffleDeck[0]);
+      this.shuffleDeck.shift();
     }
     return flop;
   }
