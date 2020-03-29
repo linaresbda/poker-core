@@ -1,0 +1,26 @@
+{
+  "name": "poker-core",
+  "version": "1.0.0",
+  "description": "Juego de poker por aburrimiento",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linaresbda/poker-core.git"
+  },
+  "keywords": [
+    "poker",
+    "js"
+  ],
+  "author": "dlinares / omorales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linaresbda/poker-core/issues"
+  },
+  "homepage": "https://github.com/linaresbda/poker-core#readme",
+  "dependencies": {
+    "underscore": "^1.9.2"
+  }
+}
