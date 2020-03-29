@@ -1,6 +1,6 @@
 class Hand{
   constructor(cards){
-    this.cards = []
+    this.cards = cards;
   }
 }
 
