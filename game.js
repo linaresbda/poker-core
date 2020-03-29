@@ -5,11 +5,12 @@ const _ = require('underscore');
 
 class Game{
   constructor(numberPlayers, credits){
-    this.flop;
-    this.numberPlayers = numberPlayers;
-    this.deckShuffle;
     this.credits = credits;
+    this.numberPlayers = numberPlayers;
+    this.flop;
+    this.deckShuffle;
     this.players;
+
     this.initGame(this.numberPlayers, this.credits);
   }
 
@@ -90,6 +91,16 @@ class Game{
       this.shuffleDeck.shift();
     }
     return flop;
+  }
+
+  fourthStreet(){
+    this.flop.push(this.shuffleDeck[0]);
+    this.shuffleDeck.shift();
+  }
+
+  fifthStreet(){
+    this.flop.push(this.shuffleDeck[0]);
+    this.shuffleDeck.shift();
   }
 }
 
